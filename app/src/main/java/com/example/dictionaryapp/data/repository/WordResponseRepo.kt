@@ -1,4 +1,7 @@
-package com.example.dictionaryapp
+package com.example.dictionaryapp.data.repository
+
+import com.example.dictionaryapp.data.ApiService
+import com.example.dictionaryapp.data.model.WordResponse
 
 class WordResponseRepo(private val api: ApiService) {
     suspend fun getMeaning(searchQuery: String): Resource<List<WordResponse>> {

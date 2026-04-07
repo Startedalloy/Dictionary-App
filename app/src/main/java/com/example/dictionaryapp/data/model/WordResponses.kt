@@ -2,7 +2,7 @@ package com.example.dictionaryapp.data.model
 
 data class WordResponse(
     val word: String,
-    val phonetic: List<Phonetic>,
+    val phonetics: List<Phonetic>,
     val meanings: List<Meaning>
 )
 
